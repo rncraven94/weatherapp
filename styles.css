@@ -1,3 +1,9 @@
 .weather-container {
   background-color: aqua;
 }
+.weather-body {
+  background-color: aqua;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
