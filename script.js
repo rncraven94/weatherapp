@@ -29,7 +29,13 @@ if (navigator.geolocation)
             windSpeed,
           })
         );
-        console.log(formatedData);
+        formatedData.forEach((entry, index) => {
+          console.log(`Entry ${index + 1}:`);
+          console.log(`Name: ${entry.name}`);
+          console.log(`Temperature: ${entry.temperature}`);
+          console.log(`Wind Speed: ${entry.windSpeed}`);
+          console.log("--------------------------");
+        });
       });
     },
     function () {
