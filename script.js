@@ -1,6 +1,7 @@
 use: "strict";
 
 const btn = document.querySelector(".btn-confirm");
+const weatherContainer = document.getElementById("weather-container");
 
 // checking the geolocation of the user for the weather
 if (navigator.geolocation)
@@ -49,6 +50,14 @@ if (navigator.geolocation)
             console.log(`Temperature: ${entry.temperature}`);
             console.log(`Wind Speed: ${entry.windSpeed}`);
             console.log("--------------------------");
+            const entryDiv = document.createElement("div");
+            entryDiv.classList.add("weather-container");
+
+            const nameElement = document.createElement("p");
+            nameElement.textContent = `${entry.name}`;
+            entryDiv.appendChild(nameElement);
+
+            weatherContainer.appendChild(entryDiv);
           });
         });
       });
