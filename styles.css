@@ -1,7 +1,13 @@
 .weather-container {
-  background-color: aqua;
+  background-color: antiquewhite;
   color: grey;
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
 }
+.weather-title {
+  font-weight: bold;
+}
+
 .weather-body {
   background-color: aqua;
 }
