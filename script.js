@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
               const tempElement = document.createElement("p");
               tempElement.textContent = `${entry.temperature}°F`;
               entryDiv.appendChild(tempElement);
+              tempElement.classList.add("weather-temp");
 
               const detailedElement = document.createElement("p");
               detailedElement.textContent = `${entry.detailedForecast}`;
