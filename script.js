@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
         gridRequest.send();
         gridRequest.addEventListener("load", function () {
           const data = JSON.parse(this.responseText);
+          const cityString = data.properties.relativeLocation.properties.city;
+          const editedCityString = cityString.split(" (")[0];
+          console.log(editedCityString);
           const dataGridX = data.properties.gridX;
           const dataGridY = data.properties.gridY;
           console.log(dataGridX);
