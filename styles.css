@@ -1,14 +1,20 @@
 .weather-container {
-  background-color: antiquewhite;
+  background-color: white;
   color: grey;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-top: 3.2rem;
   border: 1px solid #ccc;
+  margin-right: 1.6rem;
 
   /* max-width: 40rem; */
 }
 .weather-title {
   font-weight: bold;
+  text-align: center;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
 }
 
 .weather-body {
