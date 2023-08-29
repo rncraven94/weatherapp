@@ -1,6 +1,6 @@
 use: "strict";
 document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.querySelector(".btn-confirm");
+  // const btn = document.querySelector(".btn-confirm");
   const weatherContainer = document.getElementById("weather-container");
 
   // checking the geolocation of the user for the weather
@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
           const data = JSON.parse(this.responseText);
           const cityString = data.properties.relativeLocation.properties.city;
           const editedCityString = cityString.split(" (")[0];
+
           console.log(editedCityString);
           const dataGridX = data.properties.gridX;
           const dataGridY = data.properties.gridY;
