@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
               const detailedElement = document.createElement("p");
               detailedElement.textContent = `${entry.detailedForecast}`;
               entryDiv.appendChild(detailedElement);
+              detailedElement.classList.add("weather-detail");
 
               const windElement = document.createElement("p");
               windElement.textContent = `${entry.windSpeed}`;
