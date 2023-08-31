@@ -2,10 +2,11 @@
   background-color: white;
   color: grey;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   margin-top: 3.2rem;
   border: 1px solid #ccc;
   margin-right: 1.6rem;
+  margin-left: 1.6rem;
 
   /* max-width: 40rem; */
 }
@@ -27,4 +28,9 @@ body {
 p {
   display: grid;
   text-align: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
 }
