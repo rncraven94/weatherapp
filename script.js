@@ -84,10 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
           });
         });
-        const requestFetch = fetch(
-          `https://api.weather.gov/points/${latitude},${longitude}`
-        );
-        console.log(requestFetch);
       },
       function () {
         alert("Could not get your position");
